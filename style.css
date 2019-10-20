@@ -1,0 +1,11 @@
+.lead {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.display-4 {
+    font-family: 'Caveat', cursive;
+}
+textarea {
+    font-family: 'Caveat', cursive;
+    resize: none;
+}
+  
