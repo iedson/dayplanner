@@ -1,14 +1,12 @@
 $(document).ready(function(){
-    var date = moment().format('MMM Do YY');
-    var dateDiv = document.querySelector('.date')
+    var update = function() {
+        document.getElementById("clockDate")
+        .innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+    }
+    setInterval(update, 1000);
 
-    dateDiv.innerHTML = date.toString();
+    clockDiv.innerHTML = clockDate.toString();
 
-    var clock = moment().format('h:mm:ss a');
-    var clockDiv = document.querySelector('.clock');
-
-    clockDiv.innerHTML = clock.toString();
- 
     //save button 
     $('.saveBtn').on('click', function(){
         // get key value - key - value - keyvalue //
@@ -24,6 +22,7 @@ $(document).ready(function(){
     renderStorage();
     });
 
+
 // init 
 function renderStorage() {
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
@@ -38,19 +37,24 @@ function renderStorage() {
 }
 // pull from local storage //
 renderStorage();
-
-
-
-
-
-
-    /* set today's date in the header */
     
     /* color code past, current, and future bars - pick color for future, style past & current */
     
 });
 
+// var hourTen = date.getHours();
+// $('.row').children().addClass('green');
+//     alert('touchdown')
+//     console.log(hourNine);
+// if(hours >= 0 && hours < 8){
+//     $(".row").children().eq(0).addClass('red');
+// }else if(hours >=8 && hours < 16){
+//     $(".row").children().eq(1).addClass('yellow');
+// } else {
+//     $(".row").children().eq(2).addClass('green');
+// }; 
 
+// getHours();
 
 
 /* variables */
