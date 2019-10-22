@@ -1,11 +1,11 @@
 $(document).ready(function(){
+
     var update = function() {
         document.getElementById("clockDate")
         .innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
     }
     setInterval(update, 1000);
 
-    clockDiv.innerHTML = clockDate.toString();
 
     //save button 
     $('.saveBtn').on('click', function(){
@@ -53,6 +53,10 @@ renderStorage();
 // } else {
 //     $(".row").children().eq(2).addClass('green');
 // }; 
+
+// var hourNine  = document.getElementById('#hour-9');
+//     $('#hour-9').addClass('green');
+
 
 // getHours();
 
