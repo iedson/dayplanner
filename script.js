@@ -1,3 +1,5 @@
+var textArea = document.querySelector('.description');
+
 $(document).ready(function(){
 
     var update = function() {
@@ -5,6 +7,12 @@ $(document).ready(function(){
         .innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
     }
     setInterval(update, 1000);
+
+    //function to loop through hour div
+    //match div with current hour
+    //if matches with current hour color text-area green
+    //if less than current hour color red
+    //else if greater than current hour color blue
 
 
     //save button 
@@ -38,36 +46,9 @@ function renderStorage() {
 // pull from local storage //
 renderStorage();
     
-    /* color code past, current, and future bars - pick color for future, style past & current */
+/* color code past, current, and future bars - pick color for future, style past & current */
     
 });
-
-// var hourTen = date.getHours();
-// $('.row').children().addClass('green');
-//     alert('touchdown')
-//     console.log(hourNine);
-// if(hours >= 0 && hours < 8){
-//     $(".row").children().eq(0).addClass('red');
-// }else if(hours >=8 && hours < 16){
-//     $(".row").children().eq(1).addClass('yellow');
-// } else {
-//     $(".row").children().eq(2).addClass('green');
-// }; 
-
-// var hourNine  = document.getElementById('#hour-9');
-//     $('#hour-9').addClass('green');
-
-
-// getHours();
-
-
-/* variables */
-
-/* helper functions */
-
-/* events */
-    /* clicking save button */
-        /* takes text and save it to local storage */
 
 
 

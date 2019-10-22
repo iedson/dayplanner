@@ -1,21 +1,24 @@
 .lead {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 .display-4 {
     font-family: 'Caveat', cursive;
+    font-weight: bold;
 }
 textarea {
     font-family: 'Caveat', cursive;
     resize: none;
 }
 .jumbotron {
-    background: "https://images.unsplash.com/photo-1506485338023-6ce5f36692df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80";
     text-align: center;
     color: white;
 }
 #clockDate {
+    align-content: center;
     font-weight: bold;
     font-size: 2rem;
+    padding: 0 27rem;
 }
 
 .clearButton {
